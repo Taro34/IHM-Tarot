@@ -104,7 +104,7 @@ int main()
 	getchar(); //pause
 	cleanJoueur();
 	ecranPrincipal();
-	getchar();//pause
+	getchar();//pauseee
 	return(0);
 }
 
