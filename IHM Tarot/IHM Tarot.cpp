@@ -51,6 +51,9 @@ void saisieJoueur()
 	cout << "Joueur 3 : ";
 	Console::SetCursorPosition(30, 20);
 	cout << "Joueur 4 : ";
+	Console::SetCursorPosition(66, 23);
+	cout << "Creer partie!";
+
 
 }
 
@@ -82,6 +85,12 @@ void cleanJoueur()
 		Console::SetCursorPosition(i, 20);
 		cout << " ";
 	}//effacer ligne joueur 4
+
+	for (int i = 66; i < 79 ; i++)
+	{
+		Console::SetCursorPosition(i, 23);
+		cout << " ";
+	}//effacer creer partie
 	
 	
 }
@@ -96,6 +105,8 @@ void ecranPrincipal()
 	cout << "Joueur 3 ";
 	Console::SetCursorPosition(1, 4);
 	cout << "Joueur 4 ";
+	Console::SetCursorPosition(74, 1);
+	cout << "PAUSE";
 }
 int main()
 {
