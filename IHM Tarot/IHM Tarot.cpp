@@ -108,6 +108,48 @@ void ecranPrincipal()
 	Console::SetCursorPosition(74, 1);
 	cout << "PAUSE";
 }
+
+void point(int point)
+{
+	Console::SetCursorPosition(1, 23);
+	cout << "Total point : " << point  ;
+}
+
+void effacerPoint()
+{
+	for (int i = 1; i < 18; i++)
+	{
+		Console::SetCursorPosition(i, 23);
+		cout << " ";
+	}
+}
+
+void annonce(char symbole)
+{
+	Console::SetCursorPosition(56, 8);
+	cout << "Annonce roi :";
+	switch (symbole)
+	{
+	case 't':
+		Console::SetCursorPosition(70, 8);
+		cout << "trefle";
+		break;
+	case 'c':
+		Console::SetCursorPosition(70, 8);
+		cout << "carreau" ;
+		break;
+	case 'p':
+		Console::SetCursorPosition(70, 8);
+		cout << "pique" ;
+		break;
+	case 'k':
+		Console::SetCursorPosition(70, 8);
+		cout << "coeur";
+		break;
+
+	}
+}
+
 int main()
 {
 	creaTable();
@@ -116,6 +158,10 @@ int main()
 	cleanJoueur();
 	ecranPrincipal();
 	getchar();//pauseeee
+	point(22);
+	// char symbole = 'c'; // test pour la demande roi
+	annonce(symbole);
+	getchar();
 	return(0);
 
 }
